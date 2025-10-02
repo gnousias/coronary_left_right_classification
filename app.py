@@ -6,7 +6,7 @@ import numpy as np
 # Load model once and cache it
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("model.h5")
+    return tf.models.load_model("model_converted.keras")
 
 model = load_model()
 
