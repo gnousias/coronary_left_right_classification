@@ -6,11 +6,11 @@ import numpy as np
 # Load model once and cache it
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("model_epoch30_18092025.h5")
+    return tf.keras.models.load_model("model.h5")
 
 model = load_model()
 
-st.title("🖼️ Image Classifier (Streamlit)")
+st.title("Coronary Image Classifier")
 st.write("Upload an image and let the model predict!")
 
 # File uploader
